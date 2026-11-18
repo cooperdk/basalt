@@ -11,7 +11,8 @@ in system RAM, and optionally on more GPUs. The server speaks the OpenAI and Ant
 ## Requirements
 
 - Linux x86-64 with AVX2, or Windows 10 1903+ x64 ([platforms](docs/platforms.md)).
-- An NVIDIA Blackwell GPU (compute capability 12.0) with CUDA 13.
+- An NVIDIA Blackwell GPU (compute capability 12.0) with CUDA 13. A second, older card can hold the experts:
+  see [older NVIDIA cards as peers](README-peer-cards.md), this branch's addition to the engine.
 - CMake 3.24+, GCC 13+ (Linux), Python 3.10+, and enough system RAM for the experts that do not fit in VRAM.
 
 ## Quick start
